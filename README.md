@@ -50,10 +50,10 @@ In the above section we discussed mainly on the synchronizing part, I think the 
 ![image](https://user-images.githubusercontent.com/72949261/213869673-bf4f22cd-3294-483f-b802-937c1255ca94.png)
 
 **You can think like this:**
-    `If ((synchronized Write pointer = = Read pointer) && (Synchronized Write pointer [3:0] = = Read pointer [3:0]) then`
-    ` Empty=1; `
-    `If (Write pointer= = {~ synchronized Read pointer [4:3], synchronized Read pointer [2:0]) then `
-    `Full=1;`
+    If ((synchronized Write pointer = = Read pointer) && (Synchronized Write pointer [3:0] = = Read pointer [3:0]) then
+    Empty=1; 
+    If (Write pointer= = {~ synchronized Read pointer [4:3], synchronized Read pointer [2:0]) then 
+    Full=1;
 
 
 
