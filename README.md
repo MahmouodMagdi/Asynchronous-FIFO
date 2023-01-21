@@ -23,14 +23,12 @@ The above figure’s refers of an Asynchronous FIFO, it will be better if each b
     for that to happen Read enable should be Enabled and the address from which the data has to be read should be specified at the input port Read address.
     This is the Memory operation in brief .now we have to control the memory in such a way that it meets the requirements of the FIFO.
 
-**2. BINARY & GRAY COUNTER**: 
+**2. BINARY & GRAY COUNTE**: 
     We need to design a counter which can give Binary and Gray output’s, the need for Binary counter is to address the FIFO MEMORY i.e. Write and Read address. 
     And the need of Gray counter is for addressing Read and Write pointers.
     Once the counter with binary and Gray code output is designed it is then Port mapped with Memory’s Read address, write address, Read pointer, Write Pointer.
-    The Use Full and Empty logic for addressing the memor:
-    | Empty | The counter takes Empty signal and increments the Read address depending on this |
-    |-------|----------------------------------------------------------------------------------|
-    | Full  | When ever the Full signal is high the counter should not increment write address |
+    The Use Full and Empty logic for addressing the memor: | Empty | The counter takes Empty signal and increments the Read address depending on this |
+    |-------|----------------------------------------------------------------------------------| | Full  | When ever the Full signal is high the counter should not increment write address |
     |       If (~EMPTY)             |         If (~FULL)            |                  
     |-------------------------------|-------------------------------|
     |Increment Read Address         |    Increment Write Address    |                
