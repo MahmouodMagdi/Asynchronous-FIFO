@@ -28,11 +28,15 @@ The above figure’s refers of an Asynchronous FIFO, it will be better if each b
     Once the counter with binary and Gray code output is designed it is then Port mapped with Memory’s Read address, write address, Read pointer, Write Pointer.
     
     The Use Full and Empty logic for addressing the memory:
-    a. Empty: the counter takes Empty signal and increments the Read address depending on this.
-    b. Full: when ever the Full signal is high the counter should not increment write address
-    If (~EMPTY)                                                                 If (~FULL)
-    Increment Read Address                                                      Increment Write Address
-    Else                                                                        Else
-    No Increment                                                                No increment
+    
+    | Empty | The counter takes Empty signal and increments the Read address depending on this |
+    |-------|----------------------------------------------------------------------------------|
+    | Full  | When ever the Full signal is high the counter should not increment write address |
+    
+    |       If (~EMPTY)             |         If (~FULL)            |                  
+    |-------------------------------|-------------------------------|
+    |Increment Read Address         |    Increment Write Address    |                
+    |Else                           |           Else                |                 
+    |No Increment                   |         No increment          |                 
     
     
