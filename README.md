@@ -28,16 +28,16 @@ The above figure’s refers of an Asynchronous FIFO, it will be better if each b
     And the need of Gray counter is for addressing Read and Write pointers.
     Once the counter with binary and Gray code output is designed it is then Port mapped with Memory’s Read address, write address, Read pointer, Write Pointer.
     
-*The Use Full and Empty logic for addressing the memory:*
+-The Use Full and Empty logic for addressing the memory:
 
-    | Empty | The counter takes Empty signal and increments the Read address depending on this |
-    |-------|----------------------------------------------------------------------------------| 
-    | Full  | When ever the Full signal is high the counter should not increment write address |
+| Empty | The counter takes Empty signal and increments the Read address depending on this | 
+|-------|----------------------------------------------------------------------------------| 
+| Full  | When ever the Full signal is high the counter should not increment write address |
     
-    |       If (~EMPTY)             |         If (~FULL)            |                  
-    |-------------------------------|-------------------------------|
-    |Increment Read Address         |    Increment Write Address    |                
-    |Else                           |           Else                |                 
-    |No Increment                   |         No increment          |                 
+|       If (~EMPTY)             |         If (~FULL)            |                  
+|-------------------------------|-------------------------------|
+|Increment Read Address         |    Increment Write Address    |                
+|Else                           |           Else                |                 
+|No Increment                   |         No increment          |                 
     
     
