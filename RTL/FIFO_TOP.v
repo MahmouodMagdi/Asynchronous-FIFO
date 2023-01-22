@@ -7,12 +7,12 @@ module FIFO_TOP #(
 /////////////////
 // Input Ports //
 /////////////////
-	input  wire 					 W_CLK,
-	input  wire 					 R_CLK,
-	input  wire 					 W_rst_n,
-	input  wire 					 R_rst_n,
-	input  wire 					 W_inc,
-	input  wire 					 R_inc,
+	input  wire 			 W_CLK,
+	input  wire 			 R_CLK,
+	input  wire 			 W_rst_n,
+	input  wire 			 R_rst_n,
+	input  wire 			 W_inc,
+	input  wire 			 R_inc,
 	input  wire [DATA_WIDTH - 1 : 0] W_Data,
 
 
