@@ -1,0 +1,94 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FIFO_TOP
+Version: K-2015.06
+Date   : Thu Feb 23 03:02:10 2023
+****************************************
+
+Operating Conditions: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c   Library: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+Wire Load Model Mode: top
+
+  Startpoint: FIFO_R_Pointer_F2/Binary_R_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by R_CLK)
+  Endpoint: R_Data[3] (output port clocked by R_CLK)
+  Path Group: R_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO_TOP           tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock R_CLK (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                            12.00      12.00
+  FIFO_R_Pointer_F2/Binary_R_ptr_reg[0]/CK (DFFRHQX8M)
+                                                          0.00      12.00 r
+  FIFO_R_Pointer_F2/Binary_R_ptr_reg[0]/Q (DFFRHQX8M)     0.47      12.47 r
+  U651/Y (BUFX24M)                                        0.17      12.63 r
+  U664/Y (NAND2X6M)                                       0.28      12.91 f
+  U678/Y (OR3X4M)                                         0.37      13.28 f
+  U389/Y (INVX6M)                                         0.51      13.79 r
+  U691/Y (AO22X1M)                                        0.53      14.32 r
+  U693/Y (OR4X4M)                                         0.33      14.65 r
+  U694/Y (OR2X8M)                                         0.20      14.85 r
+  U695/Y (BUFX32M)                                        0.85      15.70 r
+  R_Data[3] (out)                                         0.00      15.70 r
+  data arrival time                                                 15.70
+
+  clock R_CLK (rise edge)                                20.00      20.00
+  clock network delay (ideal)                            12.00      32.00
+  clock uncertainty                                      -8.30      23.70
+  output external delay                                  -8.00      15.70
+  data required time                                                15.70
+  --------------------------------------------------------------------------
+  data required time                                                15.70
+  data arrival time                                                -15.70
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: W_inc (input port clocked by W_CLK)
+  Endpoint: FIFO_Write_Pointer_F1/W_Full_reg
+            (rising edge-triggered flip-flop clocked by W_CLK)
+  Path Group: W_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO_TOP           tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock W_CLK (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                   40.00      40.00 r
+  W_inc (in)                                              0.00      40.00 r
+  U556/Y (NAND3X12M)                                      0.11      40.11 f
+  U381/Y (NAND2X6M)                                       0.18      40.29 r
+  U574/Y (AND2X12M)                                       0.26      40.55 r
+  U534/Y (MXI2X8M)                                        0.24      40.79 r
+  U576/Y (XNOR2X8M)                                       0.15      40.94 f
+  U579/Y (NOR2X4M)                                        0.28      41.22 r
+  U544/Y (AND4X4M)                                        0.29      41.51 r
+  FIFO_Write_Pointer_F1/W_Full_reg/D (DFFRHQX4M)          0.00      41.51 r
+  data arrival time                                                 41.51
+
+  clock W_CLK (rise edge)                                50.00      50.00
+  clock network delay (ideal)                             0.00      50.00
+  clock uncertainty                                      -8.30      41.70
+  FIFO_Write_Pointer_F1/W_Full_reg/CK (DFFRHQX4M)         0.00      41.70 r
+  library setup time                                     -0.19      41.51
+  data required time                                                41.51
+  --------------------------------------------------------------------------
+  data required time                                                41.51
+  data arrival time                                                -41.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
