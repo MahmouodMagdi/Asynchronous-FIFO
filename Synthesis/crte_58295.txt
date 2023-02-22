@@ -1,0 +1,169 @@
+CRTE_SNAPSHOT_START
+
+SECTION_CRTE_VERSION
+3.0
+
+SECTION_PID
+58295
+
+SECTION_POLLING_INTERVAL
+5
+
+SECTION_DATE_TIME
+Thu Feb 23 01:11:09 CST 2023 (1677085869)
+
+SECTION_OS_VERSION
+osname: Linux
+hostname: IC
+arch: x86_64
+release_version: 2.6.32-573.el6.x86_64
+
+SECTION_IPC_INFOError: command <ipcs -msq 2>/dev/null> can not be executed.
+SECTION_ULIMIT
+Error: command <sh -c "ulimit -a"> can not be executed.
+SECTION_SYSCONF
+_SC_THREAD_SAFE_FUNCTIONS= 200809
+_SC_CLK_TCK= 100
+_SC_OPEN_MAX= 4096
+_SC_PAGE_SIZE= 4096
+_SC_ARG_MAX= 2621440
+_SC_CHILD_MAX= 1024
+_SC_LINE_MAX= 2048
+
+SECTION_FULL_COMMAND
+/opt/Synopsys/Synplify2015/linux64/syn/bin/common_shell_exec -shell dc_shell -r /opt/Synopsys/Synplify2015 -f syn_script.tcl
+
+SECTION_CPUINFO
+total_core: 4
+
+model_name:  Intel(R) Core(TM) i3-2328M CPU @ 2.20GHz
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx rdtscp lm constant_tsc arch_perfmon xtopology tsc_reliable nonstop_tsc unfair_spinlock pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer xsave avx hypervisor lahf_lm arat
+cpu_family: 6
+core_frequency_mhz: 2195
+core_per_socket: 0
+stepping: 7
+cache_size_kb: 3072
+ht: 0
+
+model_name:  Intel(R) Core(TM) i3-2328M CPU @ 2.20GHz
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx rdtscp lm constant_tsc arch_perfmon xtopology tsc_reliable nonstop_tsc unfair_spinlock pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer xsave avx hypervisor lahf_lm arat
+cpu_family: 6
+core_frequency_mhz: 2195
+core_per_socket: 0
+stepping: 7
+cache_size_kb: 3072
+ht: 0
+
+model_name:  Intel(R) Core(TM) i3-2328M CPU @ 2.20GHz
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx rdtscp lm constant_tsc arch_perfmon xtopology tsc_reliable nonstop_tsc unfair_spinlock pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer xsave avx hypervisor lahf_lm arat
+cpu_family: 6
+core_frequency_mhz: 2195
+core_per_socket: 0
+stepping: 7
+cache_size_kb: 3072
+ht: 0
+
+model_name:  Intel(R) Core(TM) i3-2328M CPU @ 2.20GHz
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx rdtscp lm constant_tsc arch_perfmon xtopology tsc_reliable nonstop_tsc unfair_spinlock pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer xsave avx hypervisor lahf_lm arat
+cpu_family: 6
+core_frequency_mhz: 2195
+core_per_socket: 0
+stepping: 7
+cache_size_kb: 3072
+ht: 0
+
+SECTION_OS_RELEASE_VERSION
+Error: command <cat /etc/redhat-release> can not be executed.
+
+SECTION_QSC_CHECKER
+Cannot run QSC checker utility : Cannot open the qsc checker output 
+
+Return code from the QSC checker script is -1
+
+SECTION_SYS/VM
+Error: command <grep '' /proc/sys/vm/* 2> /dev/null> can not be executed.
+
+SECTION_SWAP
+Error: Could not collect the data.
+
+CRTE_SNAPSHOT_END
+
+CRTE_PERIODIC_START 1 0
+
+SECTION_MPSTAT
+total_core: 4
+
+CPU     %user   %kernel %wait   %idle   
+all   0.689918 0.308037 0.048854 98.953194
+0     0.987892 0.422254 0.118925 98.470932
+1     0.782026 0.350406 0.028651 98.838913
+2     0.379000 0.157390 0.023954 99.439651
+3     0.612128 0.302608 0.024116 99.061150
+
+SECTION_PID_STATUS
+name: common_shell_ex
+state: 1
+vmsize: 1072976
+vmrss: 324788
+vmdata: 634120
+vmstk: 172
+vmexe: 243632
+vmlib: 8936
+threads: 1
+
+SECTION_PROCESS_CPU_UTIL
+pid: 58295
+cpu_total_time: 43579254
+cpu_used_time: 2481
+cpu_p: 
+
+SECTION_SYSTEM_CPU_UTIL
+sys_cpu_p: 
+
+SECTION_MEMINFO
+memtotal: 5618144
+memfree: 117332
+cached: 275312
+swapcached: 0
+active: 5162512
+swaptotal: 0
+swapfree: 0
+
+SECTION_SMAPS
+shared_kb: 45760
+private_kb: 279032
+
+SECTION_DF
+Filesystem  Size  Used Avail Use%
+filesystem        491G  86G  380G    18
+
+Filesystem    Inodes   IUsed   IFree   IUse%
+filesystem          32743424  1013414 31730010   4294964265
+
+SECTION_CWD
+Filesystem  Size  Used Avail Use%
+filesystem        491G  86G  380G    18
+
+Filesystem    Inodes   IUsed   IFree   IUse%
+filesystem          32743424  1013414 31730010   4294964265
+
+SECTION_SWAP_RATE
+Error: Could not collect the data.
+
+SECTION_FD_SIZE
+files: 15
+total_size: 224191
+
+SECTION_NET_INTERFACE
+total_eth_avbl: 1
+
+name net_rx_err net_rx_drp net_tx_err net_tx_drp 
+    lo:         0        0        0        0
+
+SECTION_NFSSTAT
+Error: Could not collect the data.
+
+SECTION_THREAD_CPU_UTIL
+58295 : 58295 (common_shell_ex) R 37172 58295 37172 34816 37172 4202496 161535 13259 121 0 1916 553 3 9 20 0 1 0 10984755 1098727424 81198 18446744073709551615 4194304 253670493 140725511850928 140725511836400 266252380125 0 0 4096 1132490495 0 0 0 17 0 0 0 230 0 0
+
+CRTE_PERIODIC_END 1 0
