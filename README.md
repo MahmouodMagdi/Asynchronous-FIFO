@@ -1,5 +1,5 @@
 # Asynchronous-FIFO
-A verilog implementation of an aynchronous FIFO (First In First Out).
+A verilog implementation of an aynchronous FIFO (First In First Out) including Synthesis, DFT, Scan Insertion and Formal Verification using TCL scripts.
 
 # INTRODUCTION
 An Asynchronous FIFO Design refers to a FIFO Design where in the data values are written to the FIFO memory from one clock domain 
