@@ -25,9 +25,10 @@ The above figure’s refers of an Asynchronous FIFO, it will be better if each b
     
 * The Use Full and Empty logic for addressing the memory:
 
-| Empty | The counter takes Empty signal and increments the Read address depending on this | 
-|-------|----------------------------------------------------------------------------------| 
-| Full  | When ever the Full signal is high the counter should not increment write address |
+| Signal |                                    Describtion                                   | 
+|--------|----------------------------------------------------------------------------------| 
+|  Full  | When ever the Full signal is high the counter should not increment write address |
+|  Empty | The counter takes Empty signal and increments the Read address depending on this |
     
 |       If (~EMPTY)             |         If (~FULL)            |                  
 |-------------------------------|-------------------------------|
